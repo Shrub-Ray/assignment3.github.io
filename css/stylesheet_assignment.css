@@ -12,6 +12,12 @@
     height: 120px;;
     width: 120px;
 }
+@media (max-width: 600px) {
+    .header_img{
+        height: 80px;;
+        width: 80px;
+    }
+}
 .topnav{
     overflow: hidden;
     
@@ -23,6 +29,11 @@
     color: black;   
     padding: 14px 16px;   
     text-decoration: none;
+}
+@media (max-width: 600px) {
+    .topnav a{
+        font-size: small;
+    }
 }
 .topnav a:hover {   
     background-color: rgb(192, 181, 181);
@@ -39,12 +50,18 @@
     margin-left: auto;
     margin-right: auto;
     width: 80%;
+    padding-top: 30px;
 }
 .h21{
     text-align: center;
     padding: 30px;
     margin: 0%;
     font-family: cursive;
+}
+@media (max-width: 600px) {
+    .h21{
+        font-size: x-large;
+    }
 }
 .row:after {
     content: "";   
@@ -136,6 +153,13 @@ text-align: center;
     padding-right: 10px;
 
 }
+@media (max-width: 600px) {
+    .footer_img{
+        height: 40px;
+        width: 50px;
+    }
+}
+
 .footer_img:hover{
     opacity: 0.7;
     float: inline-start;
@@ -143,6 +167,11 @@ text-align: center;
 .footer_text{
     text-align: right;
     
+}
+@media (max-width: 600px) {
+    .footer_text{
+        font-size: small;
+    }
 }
 .footer_text a {
     float:inline-end;  
@@ -192,11 +221,22 @@ text-align: center;
     margin-left: auto;
     margin-right: auto;
     width: 80%;
+    padding-top: 30px;
 }
 .imap{
+    display: flex;
     width: 500px;
     height: 450px;
+    border: none;
+    justify-content: center;
+    display: flex;
+    text-align: center;
 
+}
+@media (max-width: 600px) {
+    .imap{
+        width:400px;
+    }
 }
 .maphref{
     display: flex;
@@ -205,6 +245,7 @@ text-align: center;
     width: 500px;
     height: 450px;
     overflow: hidden;
+    border: none;
 }
 .menupdf{
     width: 100%;
